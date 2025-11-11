@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGOUDJIL KATIA - My Projects</title>
+    <link rel="stylesheet" href="css/styles_p.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <span>Algiers, ALGERIA</span>
+            <img src="images/dz.png" alt="Algerian Flag" class="flag">
+        </div>
+        <div class="navbar-right">
+            <a href="index.html">Home</a>
+            <a href="journey.html">My Journey Visualized</a>
+            <a href="education.html">My Education</a>
+            <a href="skills.html">My Skills</a>
+            <a href="project.html">My Projects</a>
+            <a href="learn.html">Learn With Me</a>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="education-section">
+            <h2>My Professional Projects</h2>
+            <div class="university">
+                <hr> <!-- Divider added here -->
+            </div>
+
+            <div class="education-details flex-container">
+                <div class="text-content">
+                    <h3>DSIS CNAS : Provision Of Services Component (08/2022-Present)</h3>
+                    <h5>General Directorate of National Social Security Fund</h5>
+                    <p>This module involves constructing a decision support system to monitor the evolution of expenditures and costs, with <u><strong>211</strong></u> indicators collected to analyze the functional domain of service.</p>
+                  <br>
+                    Tasks:
+                    <ul>
+                        <li>Develop and design OLAP cube using SSAS to support business analytics and improve decision-making.</li>
+                        <li>Create interactive reports using Power BI to provide insights into key performance indicators (KPIs). Setup Power BI Report Server, SSRS, and Oracle Providers to meet the project requirements.</li>
+                        <li>Create project backlogs, and user stories with Azure DevOps for sprint planning and execution.</li>
+                        <li>Develop technical support documents for bug resolution and task-specific procedures <strong><u>(Up to 20 Validated documents)</u></strong></li>
+                    </ul>
+                </div>
+                <img src="images/chifa.png" alt="Education Building" class="education-image">
+            </div>
+
+            <div class="education-details flex-container">
+                <div class="text-content">
+                    <h3>DSIS CNAS : Revenue And Recovery Component (12/2022 - 08/2023)</h3>
+                    <h5>General Directorate of National Social Security Fund</h5>
+                    <p>This module involves building a decision support system to track the evolution of contributions and assess financial balance using more than <strong><u>190</u></strong> indicators collected to enhance decision-making.</p>
+                    <br>
+                    Tasks:
+                    <ul>
+                        <li>Develop ETL processes using ORACLE for data extraction, transformation, and loading. Design and implement data cleansing, validation, and transformation logic to ensure data quality.</li>
+                        <li>Create and schedule SSIS packages to automate data integration tasks and ensure timely data updates.</li>
+                        <li>Configure monitoring and data security mechanisms utilizing Zabbix tool and automatic OLAP backup procedures.</li>
+                        <li>Handle backups for vital CNAS databases using DORADO HUAWEI and DELL technologies.</li>
+                    </ul>
+                </div>
+                <img src="images/insurence.jpg" alt="Education Building" class="education-image">
+            </div>
+        </section>
+        <section class="graduation-project">
+            <h2>My Side Projects</h2>
+            <hr>
+            <div class="project">
+                <p>In addition to my professional work, I enjoy taking on side projects that allow me to explore new skills, technologies, and creative solutions. These projects showcase my passion for continuous learning and innovation. If you find any of these initiatives interesting and would like to contribute, I’d be thrilled to collaborate and work together. Dive in to see some of the exciting and diverse initiatives I’ve been working on lately.</p>
+     <section class="slider">
+  <article id="article-container"></article>
+  <div>
+    <button class="leftArrow" onclick="previousImg()">❮</button>
+    <button class="rightArrow" onclick="nextImg()">❯</button>
+  </div>
+</section>
+<!-- Info-link -->
+<aside> Visit <a href="https://github.com/agkatia/PowerBi-Portfolio" target="_blank" rel="noopener noreferrer">My GitHub </a> For More Details
+</aside>   
+                   <script>
+    // Get all the nav links
+    const navLinks = document.querySelectorAll('.navbar-right a');
+
+    // Loop through each link
+    navLinks.forEach(link => {
+        // Check if the link href matches the current URL
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+    });
+</script>
+                  <script src="script_p.js"></script> 
+
+</body>
+</html>

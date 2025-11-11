@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGOUDJIL KATIA</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <span> Algiers, ALGERIA   </span>
+            <img src="images/dz.png" alt="Algerian Flag" class="flag">
+        </div>
+        <div class="navbar-right">
+            <a href="index.html">Home</a>
+              <a href="journey.html">My Journey Visualized</a>
+             <a href="education.html">My Education</a>
+            <a href="skills.html">My Skills</a>
+            <a href="project.html">My Projects</a>
+             <a href="learn.html">Learn With Me</a>
+        </div>
+    </nav>
+<div class="wrapper">
+<h1 class="effect-wrapper">Data is <span id="typed"></span><span class="cursor">&nbsp;</span></h1>
+</div>
+    <!-- Introduction Section --> <div class="introduction-container">
+        <div class="introduction"> <p>I'm <span class="extra-bold"> Katia</span>,a Business Intelligence Engineer with 2 years of experience. What do I like? Diving deep into the world of technology and data. The more I explore, the more I realize we're just tiny creatures in a big, fascinating world.<br> <span class="extra-bold">Crazy, right?</span></p> 
+        </div> </div>
+        <!-- Profile Picture -->
+    <div class="profile-picture-container">
+        <img src="https://raw.githubusercontent.com/agkatia/agkatia.github.io/refs/heads/main/images/me.jpg" alt="Katia" class="profile-picture">
+    
+    </div>
+
+   <div class="social-links">  
+          
+        <a href="https://www.linkedin.com/in/katia00/" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon.svg" alt="LinkedIn" title="LinkedIn"class="social-icon"></a>
+     
+      <a href="https://github.com/agkatia" target="_blank"><img src="https://raw.githubusercontent.com/agkatia/agkatia.github.io/refs/heads/main/images/git.png" alt="GitHub" title="GitHub" class="social-icon"></a>
+     
+      <a href="https://medium.com/@byteknight00" target="_blank"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/medium-round-icon.png" alt="Medium"  title="Medium" class="social-icon"></a> 
+     
+
+         <a href="mailto:ag.katia00@gmail.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" title="Gmail" class="social-icon"></a>
+     
+ 
+     
+     </div>
+  
+  <script src="script.js"></script> 
+    <script>
+    // Get all the nav links
+    const navLinks = document.querySelectorAll('.navbar-right a');
+
+    // Loop through each link
+    navLinks.forEach(link => {
+        // Check if the link href matches the current URL
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+    });
+</script>
+
+</body>
+</html>

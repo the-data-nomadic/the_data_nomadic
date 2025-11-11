@@ -4,63 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGOUDJIL KATIA</title>
-    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Montserrat:wght@700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <style>
+        body { font-family: 'Roboto Mono', monospace; }
+        .typed-cursor { color: #3B82F6; animation: blink 0.8s infinite; }
+        @keyframes blink { 0%,100%{opacity:1}50%{opacity:0} }
+    </style>
 </head>
-<body>
-    <nav class="navbar">
-        <div class="navbar-left">
-            <span> Algiers, ALGERIA   </span>
-            <img src="images/dz.png" alt="Algerian Flag" class="flag">
+<body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-gray-800 flex justify-between items-center px-6 py-4 shadow-md z-50">
+        <div class="flex items-center gap-4">
+            <img src="images/dz.png" alt="Algerian Flag" class="w-6 h-auto">
+            <span class="text-white font-medium">Algiers, ALGERIA</span>
         </div>
-        <div class="navbar-right">
-            <a href="index.html">Home</a>
-              <a href="journey.html">My Journey Visualized</a>
-             <a href="education.html">My Education</a>
-            <a href="skills.html">My Skills</a>
-            <a href="project.html">My Projects</a>
-             <a href="learn.html">Learn With Me</a>
+        <div class="flex gap-4">
+            <a href="index.html" class="hover:text-blue-500">Home</a>
+            <a href="journey.html" class="hover:text-blue-500">My Journey Visualized</a>
+            <a href="education.html" class="hover:text-blue-500">My Education</a>
+            <a href="skills.html" class="hover:text-blue-500">My Skills</a>
+            <a href="project.html" class="hover:text-blue-500">My Projects</a>
+            <a href="learn.html" class="hover:text-blue-500">Learn With Me</a>
         </div>
     </nav>
-<div class="wrapper">
-<h1 class="effect-wrapper">Data is <span id="typed"></span><span class="cursor">&nbsp;</span></h1>
-</div>
-    <!-- Introduction Section --> <div class="introduction-container">
-        <div class="introduction"> <p>I'm <span class="extra-bold"> Katia</span>,a Business Intelligence Engineer with 2 years of experience. What do I like? Diving deep into the world of technology and data. The more I explore, the more I realize we're just tiny creatures in a big, fascinating world.<br> <span class="extra-bold">Crazy, right?</span></p> 
-        </div> </div>
+
+    <!-- Hero Section -->
+    <section class="flex flex-col justify-center items-center min-h-screen pt-32 px-4 text-center">
+        <h1 class="text-5xl sm:text-6xl font-bold mb-6">Data is <span id="typed" class="text-blue-500"></span><span class="typed-cursor">&nbsp;</span></h1>
+        <p class="max-w-2xl text-lg sm:text-xl mb-8">
+            I'm <span class="font-bold">Katia</span>, a Business Intelligence Engineer with 2 years of experience. 
+            I love diving deep into the world of technology and data. 
+            The more I explore, the more I realize we're tiny creatures in a vast, fascinating world. 
+            <span class="font-bold">Crazy, right?</span>
+        </p>
+
         <!-- Profile Picture -->
-    <div class="profile-picture-container">
-        <img src="https://raw.githubusercontent.com/agkatia/agkatia.github.io/refs/heads/main/images/me.jpg" alt="Katia" class="profile-picture">
-    
-    </div>
+        <div class="flex justify-center mb-8">
+            <img src="https://raw.githubusercontent.com/agkatia/agkatia.github.io/refs/heads/main/images/me.jpg" alt="Katia" class="w-64 h-64 sm:w-72 sm:h-72 rounded-full object-cover shadow-lg">
+        </div>
 
-   <div class="social-links">  
-          
-        <a href="https://www.linkedin.com/in/katia00/" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon.svg" alt="LinkedIn" title="LinkedIn"class="social-icon"></a>
-     
-      <a href="https://github.com/agkatia" target="_blank"><img src="https://raw.githubusercontent.com/agkatia/agkatia.github.io/refs/heads/main/images/git.png" alt="GitHub" title="GitHub" class="social-icon"></a>
-     
-      <a href="https://medium.com/@byteknight00" target="_blank"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/medium-round-icon.png" alt="Medium"  title="Medium" class="social-icon"></a> 
-     
+        <!-- Social Links -->
+        <div class="flex gap-6 flex-wrap justify-center">
+            <a href="https://www.linkedin.com/in/katia00/" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon.svg" class="w-10 h-10 hover:scale-125 transition-transform" alt="LinkedIn"></a>
+            <a href="https://github.com/agkatia" target="_blank"><img src="https://raw.githubusercontent.com/agkatia/agkatia.github.io/refs/heads/main/images/git.png" class="w-10 h-10 hover:scale-125 transition-transform" alt="GitHub"></a>
+            <a href="https://medium.com/@byteknight00" target="_blank"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/medium-round-icon.png" class="w-10 h-10 hover:scale-125 transition-transform" alt="Medium"></a>
+            <a href="mailto:ag.katia00@gmail.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" class="w-10 h-10 hover:scale-125 transition-transform" alt="Gmail"></a>
+        </div>
+    </section>
 
-         <a href="mailto:ag.katia00@gmail.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" title="Gmail" class="social-icon"></a>
-     
- 
-     
-     </div>
-  
-  <script src="script.js"></script> 
+    <!-- Typed JS -->
+    <script src="script.js"></script>
     <script>
-    // Get all the nav links
-    const navLinks = document.querySelectorAll('.navbar-right a');
-
-    // Loop through each link
-    navLinks.forEach(link => {
-        // Check if the link href matches the current URL
-        if (link.href === window.location.href) {
-            link.classList.add('active');
-        }
-    });
-</script>
+        // Navbar active link
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            if (link.href === window.location.href) link.classList.add('text-blue-500');
+        });
+    </script>
 
 </body>
 </html>
